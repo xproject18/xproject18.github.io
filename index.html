@@ -5,39 +5,9 @@
 <link rel="stylesheet" href="../lib/w3.css">
 <body>
 
-<h2 class="w3-center">Manual Slideshow</h2>
-
-<div class="w3-content" style="max-width:800px;position:relative">
-
-<video class="mySlides" src="/!avg/1001_1.webm" style="width:100%">
-<video class="mySlides" src="/!avg/1001_2.webm" style="width:100%">
-<video class="mySlides" src="/!avg/1001_3.webm" style="width:100%">
-<video class="mySlides" src="/!avg/1001_4.webm" style="width:100%">
-
-<a class="w3-btn-floating" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">❮</a>
-<a class="w3-btn-floating" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">❯</a>
-
-</div>
-
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length} ;
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-</script>
+<video autoplay>
+  <source src="/!avg/1001_1.webm" type="video/webm">
+</video>
 
 </body>
 </html> 
